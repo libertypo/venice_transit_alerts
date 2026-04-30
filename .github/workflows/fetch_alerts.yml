@@ -37,10 +37,11 @@ jobs:
           ACTV_CHANNEL_ID: ${{ vars.ACTV_CHANNEL_ID }}
           DEBUG_TELEGRAM_UPDATES: ${{ vars.DEBUG_TELEGRAM_UPDATES }}
         run: |
-          echo "[INFO] Workflow revision: actv-alerts-debug-3"
+          echo "[INFO] Workflow revision: actv-alerts-debug-4"
           echo "[INFO] Using ACTV_CHANNEL_ID=${ACTV_CHANNEL_ID}"
           echo "[INFO] Token length: ${#TELEGRAM_BOT_TOKEN}"
           curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe" | python -c "import sys,json; d=json.load(sys.stdin); r=d.get('result',{}); print(f'[INFO] Bot in Actions: id={r.get(\"id\")} username={r.get(\"username\")!r} ok={d.get(\"ok\")}')"
+          curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getWebhookInfo" | python -c "import sys,json; d=json.load(sys.stdin); r=d.get('result',{}); url=r.get('url',''); print(f'[INFO] Webhook URL: {url!r} (empty=good, non-empty=problem)')"
           python -u fetch_alerts.py
 
       - name: Commit and push disruptions.json
