@@ -250,7 +250,7 @@ def main() -> None:
     print(
         f"[INFO] Processed {len(updates)} update(s); matched {matched_posts} post(s) for target {CHANNEL_ID!r}."
     )
-    if DEBUG_TELEGRAM_UPDATES:
+    if DEBUG_TELEGRAM_UPDATES or matched_posts == 0:
         if observed_chats:
             print("[DEBUG] Observed chats from Telegram updates:")
             for chat_info in sorted(
