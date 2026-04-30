@@ -1,6 +1,20 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-04-30T12:03:17Z",
-  "disruptions": []
+  "lastUpdated": "2026-04-30T14:24:01Z",
+  "disruptions": [
+    {
+      "id": "tg-2f099e283b27",
+      "title": "⏱ #muoversivenezia | 🚍🚢 Servizi 1 Maggio",
+      "description": "⏱ #muoversivenezia | 🚍🚢 Servizi 1 Maggio \n\n📆 venerdì 1 maggio 2026 \n\n➡ Orario festivo per i servizi automobilistico Lido/Pellestrina e di navigazione. People Mover: prima corsa alle ore 08.10, ultima alle 21.50. \n\n🔴 nella news dettagli sulle deviazione dei servizi per il mercato di Mestre e il link per la mercato e manifestazione a Marghera https://actv.avmspa.it/it/content/marghera-1maggio-deviazione-di-mercato \n\nModifiche servizio automobilistico urbano/extraurbano: \n👉 https://actv.avmspa.it/it/content/modifica-ai-servizi-di-trasporto-1-maggio-2026",
+      "severity": "warning",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-04-30T13:36:53Z",
+      "startAt": "2026-04-30T13:36:53Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    }
+  ]
 }
