@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-04-30T21:32:57Z",
+  "lastUpdated": "2026-04-30T21:35:31Z",
   "disruptions": [
     {
       "id": "tg-463132805d81",
@@ -12,21 +12,6 @@
       "affectedStops": [],
       "lastUpdated": "2026-04-30T21:32:36Z",
       "startAt": "2026-04-30T21:32:36Z",
-      "endAt": null,
-      "source": "actv_telegram",
-      "url": null
-    },
-    {
-      "id": "tg-5b1840518b58",
-      "title": "\"test sospensione linea 1\"",
-      "description": "\"test sospensione linea 1\"",
-      "severity": "critical",
-      "lineAliases": [
-        "1"
-      ],
-      "affectedStops": [],
-      "lastUpdated": "2026-04-30T21:19:09Z",
-      "startAt": "2026-04-30T21:19:09Z",
       "endAt": null,
       "source": "actv_telegram",
       "url": null
