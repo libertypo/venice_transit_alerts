@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,11 +40,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add disruptions.json offset.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore: update disruptions $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git pull --rebase origin main
             git push
           fi
