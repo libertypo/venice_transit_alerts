@@ -37,6 +37,9 @@ TELEGRAM_BOT_TOKEN: str = os.environ.get("TELEGRAM_BOT_TOKEN", "")
 # getUpdates, OR you must configure a webhook.  If using a private relay
 # channel, set this to that channel's id.
 CHANNEL_ID: str = os.environ.get("ACTV_CHANNEL_ID", "@ACTVofficial")
+DEBUG_TELEGRAM_UPDATES: bool = os.environ.get(
+    "DEBUG_TELEGRAM_UPDATES", ""
+).strip().lower() in {"1", "true", "yes", "on"}
 
 MAX_MESSAGE_AGE_HOURS: int = 48
 OUTPUT_FILE: Path = Path("disruptions.json")
@@ -163,6 +166,8 @@ def main() -> None:
 
     disruptions: list[dict[str, Any]] = []
     new_offset = offset
+    observed_chats: dict[str, dict[str, str]] = {}
+    matched_posts = 0
 
     for update in updates:
         update_id: int = update["update_id"]
@@ -176,9 +181,17 @@ def main() -> None:
         chat = post.get("chat", {})
         chat_username = chat.get("username", "")
         chat_id = str(chat.get("id", ""))
+        chat_title = str(chat.get("title", ""))
+        observed_key = chat_id or chat_username or f"unknown-{update_id}"
+        observed_chats[observed_key] = {
+            "id": chat_id,
+            "username": chat_username,
+            "title": chat_title,
+        }
         target = CHANNEL_ID.lstrip("@").lower()
         if chat_username.lower() != target and chat_id != CHANNEL_ID:
             continue
+        matched_posts += 1
 
         date_ts: int = post.get("date", 0)
         msg_dt = datetime.fromtimestamp(date_ts, tz=timezone.utc)
@@ -234,6 +247,24 @@ def main() -> None:
 
     OUTPUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2))
     _write_offset(new_offset)
+    print(
+        f"[INFO] Processed {len(updates)} update(s); matched {matched_posts} post(s) for target {CHANNEL_ID!r}."
+    )
+    if DEBUG_TELEGRAM_UPDATES:
+        if observed_chats:
+            print("[DEBUG] Observed chats from Telegram updates:")
+            for chat_info in sorted(
+                observed_chats.values(),
+                key=lambda item: (item["username"], item["id"], item["title"]),
+            ):
+                print(
+                    "[DEBUG] "
+                    f"chat_id={chat_info['id']!r} "
+                    f"username={chat_info['username']!r} "
+                    f"title={chat_info['title']!r}"
+                )
+        else:
+            print("[DEBUG] No Telegram updates were returned by getUpdates.")
     print(f"[OK] Wrote {len(merged)} disruption(s) to {OUTPUT_FILE}.")
 
 
