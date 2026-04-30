@@ -36,7 +36,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           ACTV_CHANNEL_ID: ${{ vars.ACTV_CHANNEL_ID }}
           DEBUG_TELEGRAM_UPDATES: ${{ vars.DEBUG_TELEGRAM_UPDATES }}
-        run: python fetch_alerts.py
+        run: |
+          echo "[INFO] Workflow revision: actv-alerts-debug-2"
+          echo "[INFO] Using ACTV_CHANNEL_ID=${ACTV_CHANNEL_ID}"
+          python -u fetch_alerts.py
 
       - name: Commit and push disruptions.json
         run: |
