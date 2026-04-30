@@ -150,6 +150,15 @@ def main() -> None:
         sys.exit(1)
 
     base_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}"
+    me = _safe_get(f"{base_url}/getMe")
+    if me and me.get("ok"):
+        user = me.get("result", {})
+        print(
+            "[INFO] Bot identity: "
+            f"id={user.get('id')} "
+            f"username={user.get('username')!r}"
+        )
+
     offset = _read_offset()
 
     params: dict[str, Any] = {"timeout": 0, "limit": 100, "allowed_updates": ["channel_post", "message"]}
@@ -162,6 +171,25 @@ def main() -> None:
         sys.exit(1)
 
     updates: list[dict[str, Any]] = data.get("result", [])
+    if not updates and offset:
+        print(
+            "[WARN] getUpdates returned 0 items with stored offset; retrying once without offset."
+        )
+        fallback_params: dict[str, Any] = {
+            "timeout": 0,
+            "limit": 100,
+            "allowed_updates": ["channel_post", "message"],
+        }
+        fallback_data = _safe_get(f"{base_url}/getUpdates?{_encode_params(fallback_params)}")
+        if fallback_data and fallback_data.get("ok"):
+            updates = fallback_data.get("result", [])
+            if updates:
+                max_update_id = max(int(update["update_id"]) for update in updates)
+                offset = max_update_id + 1
+                print(
+                    f"[INFO] Fallback recovered {len(updates)} update(s); resetting offset to {offset}."
+                )
+
     cutoff = datetime.now(timezone.utc) - timedelta(hours=MAX_MESSAGE_AGE_HOURS)
 
     disruptions: list[dict[str, Any]] = []
