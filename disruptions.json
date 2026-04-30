@@ -1,8 +1,21 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-04-30T21:35:31Z",
+  "lastUpdated": "2026-04-30T22:36:39Z",
   "disruptions": [
+    {
+      "id": "tg-48535c340858",
+      "title": "test123",
+      "description": "test123",
+      "severity": "info",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-04-30T21:44:55Z",
+      "startAt": "2026-04-30T21:44:55Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-463132805d81",
       "title": "⏱ #muoversivenezia | 🚍🚢 Servizi 1 Maggio",
