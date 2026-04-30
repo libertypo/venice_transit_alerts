@@ -40,11 +40,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+          # Save generated files, reset to latest remote, restore — guarantees fast-forward
+          cp disruptions.json /tmp/disruptions.json
+          cp offset.txt /tmp/offset.txt 2>/dev/null || true
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/disruptions.json disruptions.json
+          cp /tmp/offset.txt offset.txt 2>/dev/null || true
           git add disruptions.json offset.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
             git commit -m "chore: update disruptions $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push
+            git push origin main
           fi
