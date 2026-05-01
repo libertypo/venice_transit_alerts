@@ -1,8 +1,21 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-01T05:03:25Z",
+  "lastUpdated": "2026-05-01T06:24:33Z",
   "disruptions": [
+    {
+      "id": "tg-93283e147862",
+      "title": "A chi oggi è in servizio, a chi lavora da remoto, a chi ha la fortuna di passare una giornata a casa tra famiglia e amic",
+      "description": "A chi oggi è in servizio, a chi lavora da remoto, a chi ha la fortuna di passare una giornata a casa tra famiglia e amici o in uno dei tanti eventi organizzati in città, a chi utilizza i servizi #muoversivenezia per spostarsi per qualsiasi ragione\n\nBuon primo maggio\nBuona festa dei lavoratori\nBuona festa del lavoro\n\nUn abbraccio agli equipaggi, i conducenti, i verificatori, gli addetti vendita, i manutentori, gli operatori dei parcheggi, delle darsene e degli approdi, il personale di terra e di assistenza, lo staff degli eventi, le centrali operative: un abbraccio alla comunità AVM/Actv Venezia e Venezia Unica",
+      "severity": "info",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-01T06:03:10Z",
+      "startAt": "2026-05-01T06:03:10Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-48535c340858",
       "title": "test123",
