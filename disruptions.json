@@ -1,8 +1,21 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-01T14:07:51Z",
+  "lastUpdated": "2026-05-01T15:13:59Z",
   "disruptions": [
+    {
+      "id": "tg-05757f503efe",
+      "title": "🆕 AVM/Actv sarà presente al Venezia Comics per condividere la nuova campagna di comunicazione dedicata a chi ogni giorno",
+      "description": "🆕 AVM/Actv sarà presente al Venezia Comics per condividere la nuova campagna di comunicazione dedicata a chi ogni giorno usa il trasporto pubblico, per viaggiare meglio, insieme. \n\nDall'1 al 3 maggio 2026, ci troverete all'ingresso del Forte Marghera con alcuni totem e sabato 2 maggio, alle 12:00 saremo in area palco per la presentazione ufficiale. \n\nSarà presente con noi l'illustratore Sebastiano Mandruzzato di A Venessia .",
+      "severity": "info",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-01T14:10:16Z",
+      "startAt": "2026-05-01T14:10:16Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-93283e147862",
       "title": "A chi oggi è in servizio, a chi lavora da remoto, a chi ha la fortuna di passare una giornata a casa tra famiglia e amic",
