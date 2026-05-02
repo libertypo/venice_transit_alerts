@@ -1,8 +1,21 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-02T08:06:27Z",
+  "lastUpdated": "2026-05-02T09:18:22Z",
   "disruptions": [
+    {
+      "id": "tg-88a95504b1a8",
+      "title": "Il traffico torna regolare",
+      "description": "Il traffico torna regolare",
+      "severity": "info",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-02T09:11:11Z",
+      "startAt": "2026-05-02T09:11:11Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-196adf3d8e45",
       "title": "#muoversivenezia ⚠️",
