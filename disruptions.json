@@ -1,8 +1,23 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-02T21:05:39Z",
+  "lastUpdated": "2026-05-02T21:56:17Z",
   "disruptions": [
+    {
+      "id": "tg-f432d991f2a6",
+      "title": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠",
+      "description": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠\n\nAttivato servizio automobilistico sostitutivo TRAM per l'intera Linea T1 FAVARO - VENEZIA in entrambe le direzioni.\n\n\n🔗 http://bit.ly/ServiziSostitutiviTram",
+      "severity": "info",
+      "lineAliases": [
+        "T1"
+      ],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-02T21:41:06Z",
+      "startAt": "2026-05-02T21:41:06Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-88a95504b1a8",
       "title": "Il traffico torna regolare",
@@ -64,32 +79,6 @@
       "affectedStops": [],
       "lastUpdated": "2026-05-01T06:03:10Z",
       "startAt": "2026-05-01T06:03:10Z",
-      "endAt": null,
-      "source": "actv_telegram",
-      "url": null
-    },
-    {
-      "id": "tg-48535c340858",
-      "title": "test123",
-      "description": "test123",
-      "severity": "info",
-      "lineAliases": [],
-      "affectedStops": [],
-      "lastUpdated": "2026-04-30T21:44:55Z",
-      "startAt": "2026-04-30T21:44:55Z",
-      "endAt": null,
-      "source": "actv_telegram",
-      "url": null
-    },
-    {
-      "id": "tg-463132805d81",
-      "title": "⏱ #muoversivenezia | 🚍🚢 Servizi 1 Maggio",
-      "description": "⏱ #muoversivenezia | 🚍🚢 Servizi 1 Maggio \n\n📆 venerdì 1 maggio 2026 \n\n➡ Orario festivo per i servizi automobilistico Lido/Pellestrina e di navigazione. People Mover: prima corsa alle ore 08.10, ultima alle 21.50. \n\n🔴 nella news dettagli sulle deviazione dei servizi per il mercato di Mestre e il link per la mercato e manifestazione a Marghera https://actv.avmspa.it/it/content/marghera-1maggio-deviazione-di-mercato \n\nModifiche servizio automobilistico urbano/extraurbano: \n👉 https://actv.avmspa.it/it/content/modifica-ai-servizi-di-trasporto-1-maggio-2026",
-      "severity": "warning",
-      "lineAliases": [],
-      "affectedStops": [],
-      "lastUpdated": "2026-04-30T21:32:36Z",
-      "startAt": "2026-04-30T21:32:36Z",
       "endAt": null,
       "source": "actv_telegram",
       "url": null
