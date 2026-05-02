@@ -1,8 +1,23 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-02T21:56:17Z",
+  "lastUpdated": "2026-05-02T22:40:23Z",
   "disruptions": [
+    {
+      "id": "tg-6a1908a5193d",
+      "title": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠",
+      "description": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠\n\nLinea T1 - il servizio torna progressivamente regolare in entrambe le direzioni.\n\n\n🔗 http://bit.ly/ServiziSostitutiviTram",
+      "severity": "info",
+      "lineAliases": [
+        "T1"
+      ],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-02T22:16:07Z",
+      "startAt": "2026-05-02T22:16:07Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-f432d991f2a6",
       "title": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠",
