@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-03T15:26:46Z",
+  "lastUpdated": "2026-05-03T16:08:45Z",
   "disruptions": [
     {
       "id": "tg-6a1908a5193d",
@@ -55,19 +55,6 @@
       "affectedStops": [],
       "lastUpdated": "2026-05-02T07:52:50Z",
       "startAt": "2026-05-02T07:52:50Z",
-      "endAt": null,
-      "source": "actv_telegram",
-      "url": null
-    },
-    {
-      "id": "tg-928675de0f59",
-      "title": "Pronti per la prossima stagione in Lega Serie A",
-      "description": "Pronti per la prossima stagione in Lega Serie A",
-      "severity": "info",
-      "lineAliases": [],
-      "affectedStops": [],
-      "lastUpdated": "2026-05-01T15:34:13Z",
-      "startAt": "2026-05-01T15:34:13Z",
       "endAt": null,
       "source": "actv_telegram",
       "url": null
