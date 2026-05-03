@@ -1,8 +1,23 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-03T19:12:17Z",
+  "lastUpdated": "2026-05-03T20:00:10Z",
   "disruptions": [
+    {
+      "id": "tg-7f5331add9e5",
+      "title": "Si sta per chiudere una tre giorni, quella del ponte del primo maggio, particolarmente intensa per Venezia e la sua comu",
+      "description": "Si sta per chiudere una tre giorni, quella del ponte del primo maggio, particolarmente intensa per Venezia e la sua comunità.\n\nUna tre giorni che ha visto le donne e gli uomini di #muoversivenezia e #veneziaunica in prima linea per garantire servizi essenziali a fronte di un grande flusso di persone che dal primo al tre maggio hanno raggiunto Marghera (per la manifestazione organizzata dai Sindacati), Mestre con la terza edizione del Venezia Comics a Forte Marghera e ovviamente Venezia, con un picco significativo nella giornata di ieri, sabato 2 maggio.\n\nNella 3 giorni sono state organizzate oltre 300 corse aggiuntive nel solo servizio di navigazione, garantendo il massimo della mobilità possibile nella città lagunare, da e verso le isole, lungo il Canal Grande, il Canale della Giudecca e",
+      "severity": "info",
+      "lineAliases": [
+        "PER"
+      ],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-03T19:17:03Z",
+      "startAt": "2026-05-03T19:17:03Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-6a1908a5193d",
       "title": "🚌🚊 SERVIZIO INFOMOBILITÀ ⚠",
