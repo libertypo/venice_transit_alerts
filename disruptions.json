@@ -1,8 +1,21 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-04T04:01:45Z",
+  "lastUpdated": "2026-05-04T06:48:22Z",
   "disruptions": [
+    {
+      "id": "tg-3482642ad084",
+      "title": "🔄 #muoversivenezia 🚍 | Mogliano",
+      "description": "🔄 #muoversivenezia 🚍 | Mogliano \n\n🗓 dalle ore 8.00 di lunedì 4 maggio alle ore 24.00 di domenica 11 maggio 2026 \n\n❌🚍 per “Festa dei Fiori”, gli autobus di Mogliano dovranno essere parcheggiati sul lato nord del piazzale, parallelamente a via Ronzinella. \nDalle ore 15:00 di venerdì 8 alle 24.00 di domenica 10 maggio 2026, verrà utilizzata l’area appositamente delimitata del parcheggio di via Svevo.",
+      "severity": "info",
+      "lineAliases": [],
+      "affectedStops": [],
+      "lastUpdated": "2026-05-04T06:19:42Z",
+      "startAt": "2026-05-04T06:19:42Z",
+      "endAt": null,
+      "source": "actv_telegram",
+      "url": null
+    },
     {
       "id": "tg-7f5331add9e5",
       "title": "Si sta per chiudere una tre giorni, quella del ponte del primo maggio, particolarmente intensa per Venezia e la sua comu",
