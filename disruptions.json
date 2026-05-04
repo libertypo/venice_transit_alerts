@@ -1,7 +1,7 @@
 {
   "version": 1,
   "source": "actv_telegram",
-  "lastUpdated": "2026-05-04T09:08:48Z",
+  "lastUpdated": "2026-05-04T11:16:46Z",
   "disruptions": [
     {
       "id": "tg-3482642ad084",
@@ -57,19 +57,6 @@
       "affectedStops": [],
       "lastUpdated": "2026-05-02T21:41:06Z",
       "startAt": "2026-05-02T21:41:06Z",
-      "endAt": null,
-      "source": "actv_telegram",
-      "url": null
-    },
-    {
-      "id": "tg-88a95504b1a8",
-      "title": "Il traffico torna regolare",
-      "description": "Il traffico torna regolare",
-      "severity": "info",
-      "lineAliases": [],
-      "affectedStops": [],
-      "lastUpdated": "2026-05-02T09:11:11Z",
-      "startAt": "2026-05-02T09:11:11Z",
       "endAt": null,
       "source": "actv_telegram",
       "url": null
